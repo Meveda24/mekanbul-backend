@@ -10,3 +10,5 @@ module.exports = router;
 
 router.put("/venues/:venueid", ctrlVenues.venueUpdateOne);
 router.delete("/venues/:venueid", ctrlVenues.venueDeleteOne);
+const commentCtrl = require("../controllers/comments");
+router.post("/venues/:venueid/comments", commentCtrl.addComment);

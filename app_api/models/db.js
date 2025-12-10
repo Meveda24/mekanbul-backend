@@ -1,7 +1,6 @@
 var mongoose = require("mongoose");
 
-var dbURI = "mongodb+srv://gk247011111_db_user:If46TUkBoShavtal@cluster0.umfvcqg.mongodb.net/mekanbul?retryWrites=true&w=majority";
-
+var dbURI = "mongodb+srv://gk247011111_db_user:SzzpXPs1kOmGhdXI@cluster0.umfvcqg.mongodb.net/mekanbul?retryWrites=true&w=majority";
 
 mongoose.connect(dbURI)
   .then(() => console.log("Mongoose connected to MongoDB Cloud"))
@@ -19,5 +18,6 @@ process.on("SIGINT", function () {
 });
 
 require("./venue");
+
 
 
